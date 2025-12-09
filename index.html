@@ -14,17 +14,67 @@
     </div>
   </header>
 
-
   <!-- Sticky milestone nav -->
   <nav class="sticky top-0 z-40 border-b border-rose-200/60 bg-white/80 backdrop-blur">
-    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center gap-3">
-      <a href="#milestone-1" class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">Milestone 1</a>
-      <a href="#milestone-2" class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">Milestone 2</a>
-      <a href="#milestone-3" class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">Milestone 3</a>
-      <a href="#milestone-4" class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">Milestone 4</a>
-      <a href="#milestone-5" class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">Milestone 5</a>
+    <!-- wrapper comun -->
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <!-- Desktop: butoane clasice -->
+      <!-- Desktop: butoane orizontale -->
+    <div class="mx-auto max-w-6xl px-4 py-3 hidden md:flex items-center gap-3 overflow-x-auto whitespace-nowrap">
+      <a href="#milestone-1"
+        class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">
+        Milestone 1
+      </a>
+      <a href="#milestone-2"
+        class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">
+        Milestone 2
+      </a>
+      <a href="#milestone-3"
+        class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">
+        Milestone 3
+      </a>
+      <a href="#milestone-4"
+        class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">
+        Milestone 4
+      </a>
+      <a href="#milestone-5"
+        class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">
+        Milestone 5
+      </a>
+      <a href="#milestone-6"
+        class="rounded-xl px-4 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 hover:bg-rose-50 focus:outline-none focus:ring-2">
+        Milestone 6
+      </a>
+    </div>
+
+      <!-- Mobile: buton "Meniu Milestones" pe dreapta -->
+      <button
+        id="milestone-toggle"
+        class="md:hidden inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-rose-700 ring-1 ring-rose-300 bg-white"
+        type="button"
+      >
+        <span>Milestones</span>
+        <!-- mic săgeată jos -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div id="milestone-mobile-menu" class="md:hidden border-t border-rose-100 bg-white/95 hidden">
+      <div class="mx-auto max-w-6xl px-4 py-2 flex flex-col gap-1">
+        <button class="text-left px-2 py-2 text-sm hover:bg-rose-50 rounded-lg" data-target="milestone-1">Milestone 1</button>
+        <button class="text-left px-2 py-2 text-sm hover:bg-rose-50 rounded-lg" data-target="milestone-2">Milestone 2</button>
+        <button class="text-left px-2 py-2 text-sm hover:bg-rose-50 rounded-lg" data-target="milestone-3">Milestone 3</button>
+        <button class="text-left px-2 py-2 text-sm hover:bg-rose-50 rounded-lg" data-target="milestone-4">Milestone 4</button>
+        <button class="text-left px-2 py-2 text-sm hover:bg-rose-50 rounded-lg" data-target="milestone-5">Milestone 5</button>
+        <button class="text-left px-2 py-2 text-sm hover:bg-rose-50 rounded-lg" data-target="milestone-6">Milestone 6</button>
+      </div>
     </div>
   </nav>
+
+
 
   <!-- Milestone 1 -->
   <main id="milestone-1" class="scroll-mt-24 mx-auto max-w-6xl px-6 py-10 space-y-10">
@@ -638,6 +688,316 @@
 
 </section>
 
+  <!-- Milestone 6 -->
+  <section id="milestone-6" class="scroll-mt-24 mx-auto max-w-6xl px-6 pb-16">
+    <header class="mb-8 mt-10 flex items-center justify-between">
+      <h2 class="text-3xl font-extrabold tracking-tight">Milestone 6</h2>
+      <a href="#milestone-5" class="text-sm font-medium text-rose-700 hover:underline">← Înapoi la Milestone 5</a>
+    </header>
+
+     <!-- Cuprins Milestone 5 -->
+    <aside class="mb-8 rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+      <p class="mb-3 text-sm font-semibold text-gray-700">Cuprins (Milestone 5)</p>
+      <nav class="grid gap-2 sm:grid-cols-2 md:grid-cols-4">
+        <a class="rounded-lg bg-gray-50 px-3 py-2 text-sm hover:bg-rose-50 hover:text-rose-700 ring-1 ring-gray-200" href="#m6-target-market">Determinarea mărimii pieței țintă</a>
+        <a class="rounded-lg bg-gray-50 px-3 py-2 text-sm hover:bg-rose-50 hover:text-rose-700 ring-1 ring-gray-200" href="#m6-competitors">Determinarea numărului aproximativ de jucători/competitori pe piața țintă</a>
+        <a class="rounded-lg bg-gray-50 px-3 py-2 text-sm hover:bg-rose-50 hover:text-rose-700 ring-1 ring-gray-200" href="#m6-competitors-2">Prezentarea competiției și cotele de piață pentru fiecare competitor</a>
+        <a class="rounded-lg bg-gray-50 px-3 py-2 text-sm hover:bg-rose-50 hover:text-rose-700 ring-1 ring-gray-200" href="#m6-estimation">Estimarea cotei de piață potențiale în anii 1, 2, 3, 4 și 5 după lansare</a>
+        <a class="rounded-lg bg-gray-50 px-3 py-2 text-sm hover:bg-rose-50 hover:text-rose-700 ring-1 ring-gray-200" href="#m6-determination">Determinarea valorii totale a pieței și a valorii cotei de piață pentru anii 1, 2, 3, 4, 5</a>
+        <a class="rounded-lg bg-gray-50 px-3 py-2 text-sm hover:bg-rose-50 hover:text-rose-700 ring-1 ring-gray-200" href="#m6-conclusion">Concluzii</a>
+      </nav>
+    </aside>
+
+     <section id="m6-target-market" class="rounded-2xl bg-white p-6 shadow-sm mb-8">
+      <h3 class="mb-3 text-xl font-semibold">Determinarea mărimii pieței țintă</h3>
+      <h4 class="mb-3 text-xl font-semibold">
+        Piața principală
+      </h4>
+      <ul class="list-disc pl-5 space-y-1 text-gray-700">
+        <li>✅ <strong>Număr total potențial:</strong> ~1 miliard de persoane la nivel global suferă de o formă de anxietate sau stres și au acces la un smartphone.</li>
+        <li>✅ <strong>Piața adresabilă extinsă:</strong> Piața globală de "Mental Health Apps" este evaluată la 7.5 miliarde USD (în creștere cu 16% anual).</li>
+      </ul>
+        
+      <h4 class="mb-3 mt-3 text-xl font-semibold">
+        Sub-piața Segmentul "Self-Care & Habit Tracking" (Fără terapie)
+      </h4>
+      <p class="text-gray-700 leading-relaxed">
+        Strategia începe în România pentru validarea produsului (MVP). Pe baza datelor locale (populație urbană 18-45 ani, digitalizată):
+      </p>
+        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+        <li>✅ <strong>Preferințe utilizatori:</strong> Aproximativ 40% din piața de mental health este reprezentată de aplicații de self-care (meditație, jurnal, monitorizare somn/obiceiuri), restul fiind telemedicină.</li>
+        <li>✅ <strong>Comportament:</strong> Utilizatorii din acest segment caută soluții "Do It Yourself" pentru gestionarea stresului și productivitate.</li>
+        <li>✅ <strong>Estimare Sub-piață:</strong> ~2.5 – 3 miliarde USD valoare a pieței specifice pentru uneltele pe care EMOTI le oferă.</li>
+      </ul>
+
+      <h4 class="mb-3 mt-3 text-xl font-semibold">
+        Piața Țintă Inițială: Lansarea în România
+      </h4>
+        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+        <li>✅ <strong>Utilizatori români conectați:</strong> ~10-11 milioane utilizatori de internet pe mobil.</li>
+        <li>✅ <strong>Publicul țintă demografic:</strong> ~3.5 milioane (Tineri și adulți din mediul urban, familiarizați cu concepte de "jurnal", "dezvoltare personală", "stare de bine").</li>
+        <li>✅ <strong>Cei care ar plăti/folosi activ:</strong> Estimăm realist de 250.000 – 300.000 de utilizatori în primii 2-3 ani în România, înainte de scalarea internațională.</li>
+      </ul>
+    </section>
+
+    <section id="m6-competitors" class="rounded-2xl bg-white p-6 shadow-sm mb-8">
+      <h3 class="mb-3 text-xl font-semibold">Determinarea numărului aproximativ de jucători/competitori pe piața țintă</h3>
+       <div class="overflow-x-auto">
+          <table class="w-full border-collapse text-sm text-gray-700">
+            <thead>
+              <tr class="bg-rose-100 text-left">
+                <th class="p-2 border font-semibold">Aplicație</th>
+                <th class="p-2 border font-semibold">Puncte forte</th>
+                <th class="p-2 border font-semibold">Lipsuri / Limitări</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border font-medium">Daylio</td>
+                <td class="p-3 border">
+                  Lider global pe micro-jurnal (selectezi o „față” și o activitate). 
+                  Foarte simplu și rapid, potrivit pentru începători.
+                </td>
+                <td class="p-3 border">
+                  Limitat la monitorizarea stării de spirit. 
+                  Nu are sistem avansat de formare a obiceiurilor și nici spațiu pentru jurnalizare detaliată (text lung).
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-3 border font-medium">Fabulous</td>
+                <td class="p-3 border">
+                  Bazat pe știința comportamentală, design excelent, sistem gamificat de formare a rutinelor zilnice.
+                </td>
+                <td class="p-3 border">
+                  Preț foarte ridicat (abonament scump). Interfață complexă, uneori copleșitoare. 
+                  Nu oferă spațiu real pentru descărcare emoțională (jurnal).
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3 border font-medium">Headspace / Calm</td>
+                <td class="p-3 border">
+                  Branduri globale recunoscute, conținut audio premium pentru meditație, relaxare și somn.
+                </td>
+                <td class="p-3 border">
+                  Funcțiile de jurnal sau habit tracking sunt minore sau inexistente. 
+                  Accentul este pe conținut audio, nu pe organizare emoțională zilnică.
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-3 border font-medium">Metode clasice (Notes / Agenda / Notion)</td>
+                <td class="p-3 border">
+                  Gratuite, accesibile, flexibile. Oricine le poate folosi fără abonament.
+                </td>
+                <td class="p-3 border">
+                  Nu oferă statistici, feedback emoțional, notificări motivaționale sau recompense vizuale. 
+                  Lipsesc elementele de gamification și urmărirea progresului.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-gray-700 leading-relaxed mt-6">
+          <strong>Conluzie: </strong> Niciun concurent nu unifică perfect cele două nevoi:
+           Jurnalizarea Emoțională (Reflecție) + Urmărirea Obiceiurilor (Acțiune/Disciplină) într-o interfață simplă și accesibilă ca preț pentru piața din România/Europa de Est.
+          Majoritatea aplicațiilor sunt fie doar despre emoții (Daylio), 
+          fie doar despre productivitate (Fabulous/Notion). EMOTI le aduce pe ambele "sub același acoperiș".
+        </p>
+
+    </section>
+
+    <section id="m6-competitors-2" class="rounded-2xl bg-white p-6 shadow-sm mb-8">
+      <h3 class="mb-3 text-xl font-semibold">Prezentarea competiției și cotele de piață pentru fiecare competitor</h3>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-sm text-gray-700">
+          <thead>
+            <tr class="bg-rose-100 text-left">
+              <th class="p-2 border font-semibold">Platforma</th>
+              <th class="p-2 border font-semibold">Avantaje</th>
+              <th class="p-2 border font-semibold">Limite</th>
+              <th class="p-2 border font-semibold">Cota estimată piață RO*</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3 border">Metode Clasice (Notes, Agenda, Excel)</td>
+              <td class="p-3 border">Complet gratuite, flexibilitate maximă, nu necesită învățare.</td>
+              <td class="p-3 border">Nu oferă motivație, statistici, notificări sau structură ghidată.</td>
+              <td class="p-3 border">55 – 60%</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="p-3 border">Daylio</td>
+              <td class="p-3 border">Foarte simplu de folosit (doar click-uri), vizual plăcut, istoric bun.</td>
+              <td class="p-3 border">Limitat strict la "Mood Tracking", fără funcții reale de formare a obiceiurilor.</td>
+              <td class="p-3 border">15 – 20%</td>
+            </tr>
+            <tr>
+              <td class="p-3 border">Headspace / Calm</td>
+              <td class="p-3 border">Calitate audio premium, branduri de încredere pentru relaxare.</td>
+              <td class="p-3 border">Preț prohibitiv pentru România (~60€/an). Nu au funcții de jurnalizare.</td>
+              <td class="p-3 border">10 – 15%</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="p-3 border">Fabulous</td>
+              <td class="p-3 border">Cel mai bun pe "Habit Building", design științific.</td>
+              <td class="p-3 border">Prea complex și scump pentru utilizatorul mediu care vrea doar claritate.</td>
+              <td class="p-3 border">5 – 10%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-gray-700 leading-relaxed mt-6 italic">
+        * Procentele reprezintă cota din "utilizatorii activi preocupați de self-care". Suma poate depăși 100% deoarece mulți utilizatori folosesc simultan o aplicație de meditație (ex: Headspace) și un jurnal simplu (Notes).
+      </p>
+    </section>
+
+    <section id="m6-estimation" class="rounded-2xl bg-white p-6 shadow-sm mb-8">
+      <h3 class="mb-3 text-xl font-semibold">Estimarea cotei de piață potențiale în anii 1, 2, 3, 4 și 5 după lansare</h3>
+      <p class="text-gray-700 leading-relaxed">
+        Folosim date din sondaj și tendințe de piață:
+      </p>
+      <ul class="list-disc pl-5 space-y-1 text-gray-700">
+        <li>✅ <strong>52%</strong> dintre respondenți au declarat că le lipsește disciplina în menținerea obiceiurilor noi.</li>
+        <li>✅ <strong>35%</strong> ar folosi o aplicație pentru descărcare emoțională (jurnal) dacă ar fi privată și simplă.</li>
+      </ul>
+
+      <p class="text-gray-700 leading-relaxed">
+        <strong>Total interes real validat: ~80%</strong> (utilizatori care au nevoie fie de organizare, fie de suport emoțional, sau ambele).
+      </p>
+
+      <h4 class="mb-3 mt-3 text-xl font-semibold">
+        Estimarea adoptării (pornind din România și extinzându-ne Internațional):
+      </h4>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-sm text-gray-700">
+          <thead>
+            <tr class="bg-rose-100 text-left">
+              <th class="p-2 border font-semibold">An</th>
+              <th class="p-2 border font-semibold">Utilizatori activi EMOTI (estimare)</th>
+              <th class="p-2 border font-semibold">Market Share Estimat (din segmentul țintă)*</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3 border">Anul 1</td>
+              <td class="p-3 border">5.000 – 10.000</td>
+              <td class="p-3 border">~ 0.5 – 1%</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="p-3 border">Anul 2</td>
+              <td class="p-3 border">40.000 – 60.000</td>
+              <td class="p-3 border">~ 3 – 5%</td>
+            </tr>
+            <tr>
+              <td class="p-3 border">Anul 3</td>
+              <td class="p-3 border">150.000 – 200.000</td>
+              <td class="p-3 border">~ 10 – 12%</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="p-3 border">Anul 4</td>
+              <td class="p-3 border">400.000 – 500.000</td>
+              <td class="p-3 border">Expansiune</td>
+            </tr>
+            <tr>
+              <td class="p-3 border">Anul 5</td>
+              <td class="p-3 border">800.000 – 1.000.000</td>
+              <td class="p-3 border">Lider Regional</td>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+      <p class="mt-3 text-gray-700 leading-relaxed">
+        Aceste valori sunt justificabile deoarece:
+      </p>
+      <ul class="list-disc pl-5 space-y-1 text-gray-700">
+        <li>✅ <strong>Bariera de intrare este mică:</strong> Spre deosebire de aplicațiile cu medici (unde costul e mare), EMOTI este un produs "Freemium" (ușor de descărcat și încercat gratuit), ceea ce permite o viralitate mult mai rapidă.</li>
+        <li>✅ <strong>Golul din piață:</strong> Nicio soluție majoră nu combină eficient Jurnalul (partea emoțională) cu Tracker-ul de Obiceiuri (partea practică) la un preț accesibil pentru Europa de Est.</li>
+        <li>✅ <strong>Trendul ascendent:</strong> Conștientizarea importanței sănătății mintale crește cu 15% anual, ceea ce mărește partea de clienți în mod natural de la an la an.</li>
+      </ul>
+    </section>
+
+    <section id="m6-determination" class="rounded-2xl bg-white p-6 shadow-sm mb-8">
+      <h3 class="mb-3 text-xl font-semibold">Determinarea valorii totale a pieței și a valorii cotei de piață pentru anii 1, 2, 3, 4, 5</h3>
+      <p class="text-gray-700 leading-relaxed">
+        <p class="mt-3 text-gray-700 leading-relaxed">
+          Estimăm monetizarea realistă (model Freemium - majoritatea gratuit, minoritatea plătește):
+        </p>
+        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+          <li>✅ <strong>Surse de venit:</strong> Abonamente Premium (4.99€/lună sau 30€/an).</li>
+          <li>✅ <strong>Venit Mediu per utilizator:</strong> ~2 € / utilizator activ / an.</li>
+        </ul>
+      </p>
+
+      <h4 class="mb-3 mt-3 text-xl font-semibold">
+        Valoarea Pieței Totale
+      </h4>
+      <p class="mt-3 text-gray-700 leading-relaxed">
+        ~1 milion utilizatori interesați x 30€ (cost mediu anual) ≈ <strong>30 Milioane € / an</strong>
+      </p>
+      <p class="mt-3 text-gray-700 leading-relaxed">
+        <strong>Piața globală</strong> de aplicații de sănătate mintală (fără telemedicină) este evaluată la <strong>~2.5 Miliarde €</strong>.
+
+      <h4 class="mb-3 mt-3 text-xl font-semibold">
+        Valoarea Anuală EMOTI
+      </h4>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-sm text-gray-700">
+          <thead>
+            <tr class="bg-rose-100 text-left">
+              <th class="p-2 border font-semibold">An</th>
+              <th class="p-2 border font-semibold">Utilizatori activi EMOTI</th>
+              <th class="p-2 border font-semibold">Market Share Estimat (Local -> Global)</th>
+              <th class="p-2 border font-semibold">Valoarea Cotei (Venit Estimat ~2€)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3 border">Anul 1</td>
+              <td class="p-3 border">5.000</td>
+              <td class="p-3 border">~0.5% (RO)</td>
+              <td class="p-3 border">10.000 €</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="p-3 border">Anul 2</td>
+              <td class="p-3 border">50.000</td>
+              <td class="p-3 border">~3-5% (RO)</td>
+              <td class="p-3 border">100.000 €</td>
+            </tr>
+            <tr>
+              <td class="p-3 border">Anul 3</td>
+              <td class="p-3 border">200.000</td>
+              <td class="p-3 border">~10% (RO) + Regional</td>
+              <td class="p-3 border">400.000 €</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="p-3 border">Anul 4</td>
+              <td class="p-3 border">500.000</td>
+              <td class="p-3 border">Expansiune Internațională</td>
+              <td class="p-3 border">1.000.000 €</td>
+            </tr>
+            <tr>
+              <td class="p-3 border">Anul 5</td>
+              <td class="p-3 border">1.000.000</td>
+              <td class="p-3 border">Global</td>
+              <td class="p-3 border">2.000.000 €</td>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+    </section>
+
+    <section id="m6-conclusion" class="rounded-2xl bg-white p-6 shadow-sm mb-8">
+      <h3 class="mb-3 text-xl font-semibold">Concluzii</h3>
+      <p class="text-gray-700 leading-relaxed">
+        <strong>Piața de self-care din România</strong> este suficient de mare (~1 milion de potențiali utilizatori interesați de wellbeing) și activă în căutarea soluțiilor de echilibru emoțional pentru a justifica lansarea EMOTI.
+        Într-o piață digitală unde utilizatorii trebuie să aleagă între aplicații strict pentru jurnal (ex: Daylio) sau strict pentru productivitate (ex: Fabulous), <strong>EMOTI deține un avantaj competitiv clar:</strong> unificarea celor două funcții într-o singură platformă simplă și accesibilă, rezolvând nevoia validată în sondaje.
+      </p>
+      <p class="mt-3 text-gray-700 leading-relaxed">
+        Proiecția realistă indică o creștere de la <strong>5.000 de utilizatori în Anul 1 la 1 milion de utilizatori în Anul 5</strong> (prin extindere internațională), generând venituri estimate de până la <strong>2 Milioane €</strong>. Eliminarea costurilor logistice cu terapeuții confirmă viabilitatea comercială și profitabilitatea ridicată a proiectului.
+      </p>
+    </section>
+  </section>
 
   <!-- Footer -->
   <footer class="mt-16 border-t bg-white">
@@ -648,11 +1008,35 @@
       <a href="#milestone-3" class="hover:underline">Milestone 3</a>
       <a href="#milestone-4" class="hover:underline">Milestone 4</a>
       <a href="#milestone-5" class="hover:underline">Milestone 5</a>
+      <a href="#milestone-6" class="hover:underline">Milestone 6</a>
+
     </div>
   </footer>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+  <script>
+  const toggleBtn = document.getElementById('milestone-toggle');
+  const menu = document.getElementById('milestone-mobile-menu');
+
+  if (toggleBtn && menu) {
+    toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    menu.querySelectorAll('[data-target]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-target');
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+        menu.classList.add('hidden');
+      });
+    });
+  }
+</script>
+
 </body>
 </html>
