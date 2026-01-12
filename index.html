@@ -1043,49 +1043,48 @@
     <a href="#milestone-6" class="text-sm font-medium text-rose-700 hover:underline">← Înapoi la Milestone 6</a>
   </header>
 
-  <div class="rounded-3xl bg-white p-8 shadow-md border border-gray-100 overflow-hidden">
-    <div class="flex flex-col md:flex-row gap-10 items-center">
-      
-      <div class="md:w-1/2 space-y-6">
-        <h3 class="text-3xl font-extrabold text-gray-900 leading-tight">Vizualizarea Progresului</h3>
-        <p class="text-gray-600 text-lg leading-relaxed">
-          Răsfoiește interfața aplicației **EMOTI**. Am creat un design curat, optimizat pentru a facilita procesul de auto-reflecție.
-        </p>
-      </div>
-      
-      <div class="md:w-1/2 w-full relative group">
-        <div class="relative overflow-hidden rounded-[2.5rem] border-[12px] border-gray-900 shadow-2xl bg-black h-[600px]">
-          
-          <div id="emoti-carousel-inner" class="flex h-full transition-transform duration-500 ease-in-out">
-            <img src="homescreen.PNG" class="w-full shrink-0 h-full object-contain bg-white" alt="Home screen">
-            <img src="newentry.PNG" class="w-full shrink-0 h-full object-contain bg-white" alt="New mood entry">
-            <img src="yourjournals.PNG" class="w-full shrink-0 h-full object-contain bg-white" alt="Your Journals">
-            <img src="journalentry.PNG" class="w-full shrink-0 h-full object-contain bg-white" alt="Journal Entry">
-            <img src="calendar.PNG" class="w-full shrink-0 h-full object-contain bg-white" alt="Calendar">
-            <img src="habittracker.PNG" class="w-full shrink-0 h-full object-contain bg-white" alt="Habit Tracker">
-            <img src="water.PNG" class="w-full shrink-0 h-full object-contain bg-white" alt="Water tracker">
-            <img src="insights.PNG" class="w-full shrink-0 h-full object-contain bg-white" alt="Insights">
-          </div>
-
-          <button id="emoti-prev" class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg z-50 transition-all active:scale-95">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button id="emoti-next" class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg z-50 transition-all active:scale-95">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+  <div class="rounded-3xl bg-white p-8 shadow-md border border-gray-100">
+  <div class="flex flex-col md:flex-row gap-10 items-center">
+    
+    <div class="md:w-1/2 space-y-6">
+      <h3 class="text-3xl font-extrabold text-gray-900 leading-tight">Vizualizarea Progresului</h3>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        Răsfoiește interfața aplicației **EMOTI**. Am creat un design curat, optimizat pentru a facilita procesul de auto-reflecție.
+      </p>
+    </div>
+    
+    <div class="md:w-1/2 w-full relative">
+      <div class="relative mx-auto max-w-[320px] overflow-hidden rounded-[2.5rem] border-[12px] border-gray-900 shadow-2xl bg-white h-[600px]">
+        
+        <div id="emoti-carousel-inner" class="flex h-full transition-transform duration-500 ease-in-out">
+          <img src="homescreen.PNG" class="w-full shrink-0 h-full object-contain" alt="Home screen">
+          <img src="newentry.PNG" class="w-full shrink-0 h-full object-contain" alt="New mood entry">
+          <img src="yourjournals.PNG" class="w-full shrink-0 h-full object-contain" alt="Your Journals">
+          <img src="journalentry.PNG" class="w-full shrink-0 h-full object-contain" alt="Journal Entry">
+          <img src="calendar.PNG" class="w-full shrink-0 h-full object-contain" alt="Calendar">
+          <img src="habittracker.PNG" class="w-full shrink-0 h-full object-contain" alt="Habit Tracker">
+          <img src="water.PNG" class="w-full shrink-0 h-full object-contain" alt="Water tracker">
+          <img src="insights.PNG" class="w-full shrink-0 h-full object-contain" alt="Insights">
         </div>
       </div>
 
+      <button id="emoti-prev" class="absolute -left-6 top-1/2 -translate-y-1/2 bg-rose-500 hover:bg-rose-600 p-3 rounded-full shadow-lg z-50 transition-all text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button id="emoti-next" class="absolute -right-6 top-1/2 -translate-y-1/2 bg-rose-500 hover:bg-rose-600 p-3 rounded-full shadow-lg z-50 transition-all text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
     </div>
+
   </div>
-</section>
+</div>
 
 <script>
-  // Scriptul rămâne neschimbat, dar ne asigurăm că e încărcat o singură dată
+  // Scriptul pentru funcționalitate
   document.addEventListener('DOMContentLoaded', function() {
     let currentIdx = 0;
     const inner = document.getElementById('emoti-carousel-inner');
@@ -1093,23 +1092,19 @@
     const prevBtn = document.getElementById('emoti-prev');
     const slidesCount = inner.children.length;
 
-    if(inner && nextBtn && prevBtn) {
-        function move() {
-          inner.style.transform = `translateX(-${currentIdx * 100}%)`;
-        }
-
-        nextBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          currentIdx = (currentIdx + 1) % slidesCount;
-          move();
-        });
-
-        prevBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          currentIdx = (currentIdx - 1 + slidesCount) % slidesCount;
-          move();
-        });
+    function update() {
+      inner.style.transform = `translateX(-${currentIdx * 100}%)`;
     }
+
+    nextBtn.addEventListener('click', () => {
+      currentIdx = (currentIdx + 1) % slidesCount;
+      update();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIdx = (currentIdx - 1 + slidesCount) % slidesCount;
+      update();
+    });
   });
 </script>
     
