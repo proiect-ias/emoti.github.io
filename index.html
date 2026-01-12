@@ -1045,8 +1045,20 @@
       </p>
     </div>
     
-    <div class="md:w-1/2 w-full relative overflow-hidden rounded-xl shadow-lg group">
-      <div id="carousel-inner" class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0%);">
+    
+
+    <div class="rounded-2xl bg-white p-8 shadow-sm border border-gray-100">
+  <div class="flex flex-col md:flex-row gap-8 items-center">
+    
+    <div class="md:w-1/2 space-y-4">
+      <h3 class="text-2xl font-bold text-gray-800">Vizualizarea Progresului</h3>
+      <p class="text-gray-700 leading-relaxed">
+        Răsfoiește imaginile pentru a vedea cum arată interfața noastră pe diferite dispozitive. Am optimizat contrastul și culorile pentru a reduce oboseala vizuală.
+      </p>
+    </div>
+    
+    <div class="md:w-1/2 w-full relative overflow-hidden rounded-xl shadow-lg bg-gray-50 h-[400px]">
+      <div id="emoti-carousel-inner" class="flex h-full transition-transform duration-500 ease-in-out" style="transform: translateX(0%);">
         <img src="homescreen.PNG" class="w-full shrink-0 object-cover h-64" alt="Home screen">
         <img src="newentry.PNG" class="w-full shrink-0 object-cover h-64" alt="New mood entry">
         <img src="yourjournals.PNG" class="w-full shrink-0 object-cover h-64" alt="Lista de pagini de jurnal">
@@ -1057,17 +1069,47 @@
         <img src="insights.PNG" class="w-full shrink-0 object-cover h-64" alt=Insights">
       </div>
 
-      <button id="prevBtn" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10">
+      <button id="emoti-prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white border border-gray-200 hover:bg-rose-50 p-3 rounded-full shadow-xl z-50 transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-      <button id="nextBtn" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10">
+      <button id="emoti-next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white border border-gray-200 hover:bg-rose-50 p-3 rounded-full shadow-xl z-50 transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
         </svg>
       </button>
     </div>
+
+  </div>
+</div>
+
+<script>
+  // Folosim un event listener pentru a ne asigura că DOM-ul este complet încărcat
+  document.addEventListener('DOMContentLoaded', function() {
+    let currentIdx = 0;
+    const inner = document.getElementById('emoti-carousel-inner');
+    const nextBtn = document.getElementById('emoti-next');
+    const prevBtn = document.getElementById('emoti-prev');
+    const slidesCount = inner.children.length;
+
+    function move() {
+      inner.style.transform = `translateX(-${currentIdx * 100}%)`;
+    }
+
+    nextBtn.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevenim orice comportament default
+      currentIdx = (currentIdx + 1) % slidesCount;
+      move();
+    });
+
+    prevBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      currentIdx = (currentIdx - 1 + slidesCount) % slidesCount;
+      move();
+    });
+  });
+</script>
 
   </div>
 </div>
